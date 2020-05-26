@@ -26,5 +26,4 @@ public class AdivinarNumero {
         
         System.out.println("\nFelicidades es el numero correcto");
     }
-    
 }

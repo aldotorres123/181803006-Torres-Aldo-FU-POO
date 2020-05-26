@@ -19,7 +19,7 @@ public class Horoscopo {
                 if(dia<=20){
                     System.out.println("Tu signo zadiacal es Capricornio");
                 }
-                else{
+                else if(dia<=31){
                     System.out.println("Tu signo zodiacal es Acuario");
                 }
                 break;

@@ -1,7 +1,6 @@
 
 import java.util.Scanner;
 
-
 public class Cuadrado {
     public static void main(String[] args) {
         
@@ -16,7 +15,5 @@ public class Cuadrado {
         
         System.out.println("El area del cuadrado es: " + area);
         System.out.println("Su perimetro es de: " + per);
-        
     }
-    
 }
