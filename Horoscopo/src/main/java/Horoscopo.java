@@ -1,12 +1,10 @@
 
 import java.util.Scanner;
 
-
 public class Horoscopo {
     public static void main(String[] args) {
         
         Scanner leer=new Scanner(System.in);
-        
         int dia, mes;
         
         System.out.println("Ingresa tu dia de nacimiento: ");
@@ -112,6 +110,5 @@ public class Horoscopo {
                 }
                 break;
         }
-        
     }
 }

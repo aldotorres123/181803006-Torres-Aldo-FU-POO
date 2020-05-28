@@ -10,7 +10,7 @@ public class Primo {
 
         System.out.println("Ingresa un numero");
         int n = leer.nextInt();
-
+        
         for (i = 1; i <= n; i++) {
             if ((n % i) == 0) {
                 c++;

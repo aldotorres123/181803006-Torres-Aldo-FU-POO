@@ -2,7 +2,6 @@
 import java.util.Scanner;
 
 public class Digitos {
-
     public static void main(String[] args) {
 
         Scanner leer = new Scanner(System.in);
@@ -10,7 +9,6 @@ public class Digitos {
 
         System.out.println("Ingresa un numero no mayor a 10000");
         int n = leer.nextInt();
-
         if (n < 10000 && n > -1000) {
             for (int i = 0; i <= 3; i++) {
                 d = n % 10;

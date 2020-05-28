@@ -1,4 +1,4 @@
-
+    
 public class JuegoMain {
     public static void main(String[] args) {
         
@@ -10,7 +10,6 @@ public class JuegoMain {
         bronce.precio=1000;
         bronce.daño=10;
         bronce.velocidadDisparo=10;
-        System.out.println(bronce.toString());
         
         Ak plata=new Ak();
         plata.tipo="Plata";
@@ -20,7 +19,6 @@ public class JuegoMain {
         plata.precio=2300;
         plata.daño=11;
         plata.velocidadDisparo=9.8;
-        System.out.println(plata.toString());
         
         Ak oro=new Ak();
         oro.tipo="Oro";
@@ -30,7 +28,6 @@ public class JuegoMain {
         oro.precio=2500;
         oro.daño=13;
         oro.velocidadDisparo=9.7;
-        System.out.println(oro.toString());
         
         Ak diamante=new Ak();
         diamante.tipo="Diamante";
@@ -40,7 +37,6 @@ public class JuegoMain {
         diamante.precio=4000;
         diamante.daño=20;
         diamante.velocidadDisparo=9.4;
-        System.out.println(diamante.toString());
         
         Ak adamantium=new Ak();
         adamantium.tipo="Adamantium";
@@ -50,9 +46,11 @@ public class JuegoMain {
         adamantium.precio=10000;
         adamantium.daño=27;
         adamantium.velocidadDisparo=8;
+        
+        System.out.println(bronce.toString());
+        System.out.println(plata.toString());
+        System.out.println(oro.toString());
+        System.out.println(diamante.toString());
         System.out.println(adamantium.toString());
-        
-        
     }
-    
 }

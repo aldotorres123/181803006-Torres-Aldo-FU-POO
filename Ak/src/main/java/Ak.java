@@ -20,7 +20,9 @@ public class Ak {
 
     @Override
     public String toString() {
-        return "Ak{" + "tipo=" + tipo + ", cargador=" + cargador + ", precision=" + precision + ", velocidadCarga=" + velocidadCarga + ", precio=" + precio + ", da\u00f1o=" + daño + ", velocidadDisparo=" + velocidadDisparo + '}';
+        return "Ak{" + "tipo=" + tipo + ", cargador=" + cargador + ", precision=" + 
+                precision + ", velocidadCarga=" + velocidadCarga + ", precio=" + precio + 
+                ", da\u00f1o=" + daño + ", velocidadDisparo=" + velocidadDisparo + '}';
     }
 
     
