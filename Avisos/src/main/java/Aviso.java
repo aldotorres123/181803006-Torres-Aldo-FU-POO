@@ -1,7 +1,4 @@
 
-import java.util.Date;
-
-
 public class Aviso {
     
     int id;
@@ -16,7 +13,6 @@ public class Aviso {
     String status;
     
     public void cambiarStatus(){
-        
     }
 
     @Override
@@ -27,10 +23,4 @@ public class Aviso {
                 fechaPublicacion + "\nFecha de alta=" + fechaAlta + 
                 "\nFecha de baja=" + fechaBaja + "\nStatus=" + status + '}';
     }
-    
-    
-    
-    
-    
-    
 }

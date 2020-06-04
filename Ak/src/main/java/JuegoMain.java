@@ -2,14 +2,7 @@
 public class JuegoMain {
     public static void main(String[] args) {
         
-        Ak bronce=new Ak();
-        bronce.tipo="Bronce";
-        bronce.cargador=5;
-        bronce.precision=65;
-        bronce.velocidadCarga=5;
-        bronce.precio=1000;
-        bronce.daño=10;
-        bronce.velocidadDisparo=10;
+        Ak bronce=new Ak("Bronce",5,65,5,1000,10,10);
         
         Ak plata=new Ak();
         plata.tipo="Plata";

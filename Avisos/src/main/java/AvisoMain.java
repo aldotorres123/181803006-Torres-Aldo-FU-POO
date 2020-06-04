@@ -1,7 +1,4 @@
 
-import java.util.Date;
-
-
 public class AvisoMain {
     public static void main(String[] args) {
         
@@ -31,9 +28,5 @@ public class AvisoMain {
         
         System.out.println(aviso1.toString());
         System.out.println(aviso2.toString());
-        
-        
     }
-
-    
 }
