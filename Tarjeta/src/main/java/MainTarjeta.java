@@ -21,25 +21,16 @@ public class MainTarjeta {
         if (tarjeta.nombre != null) {
             do {
                 System.out.println("\nBienvenido " + tarjeta.nombre);
-                if (tarjeta.apartado > 0) {
-                    System.out.println("\n\tMenu");
-                    System.out.println("1.- Hacer un deposito");
-                    System.out.println("2.- Hacer un retiro");
-                    System.out.println("3.- Eliminar apartado");
-                    System.out.println("4.- Imprimir datos de la cuenta");
-                    System.out.println("5.- Salir");
-                    System.out.print("Opcion: ");
-                    opcion = leer.nextInt();
-                } else {
-                    System.out.println("\n\tMenu");
-                    System.out.println("1.- Hacer un deposito");
-                    System.out.println("2.- Hacer un retiro");
-                    System.out.println("3.- Crear apartado");
-                    System.out.println("4.- Imprimir datos de la cuenta");
-                    System.out.println("5.- Salir");
-                    System.out.print("Opcion: ");
-                    opcion = leer.nextInt();
-                }
+
+                System.out.println("\n\tMenu");
+                System.out.println("1.- Hacer un deposito");
+                System.out.println("2.- Hacer un retiro");
+                System.out.println("3.- Eliminar apartado");
+                System.out.println("4.- Imprimir datos de la cuenta");
+                System.out.println("5.- Salir");
+                System.out.print("Opcion: ");
+                opcion = leer.nextInt();
+
                 switch (opcion) {
 
                     case 1:
@@ -55,22 +46,15 @@ public class MainTarjeta {
                         tarjeta.retirar(retirar);
                         break;
                     case 3:
-                        if (tarjeta.apartado == 0) {
-                            double apartar;
-                            System.out.println("\nDigite el aparatado que desea realizar: ");
-                            apartar = leer.nextDouble();
-                            tarjeta.crearApartado(apartar);
-                        } else {
-                            System.out.println("\nApartado Eliminado");
-                            tarjeta.eliminarApartado();
-                        }
+                        System.out.println("\nApartado Eliminado");
+                        tarjeta.eliminarApartado();
                         break;
                     case 4:
                         System.out.println(tarjeta.toString());
                         break;
                 }
             } while (opcion != 5);
-        }else{
+        } else {
             System.out.println("El cliente no existe");
         }
     }

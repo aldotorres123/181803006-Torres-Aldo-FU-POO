@@ -36,7 +36,7 @@ public class Tarjeta {
         }
     }
     
-    public double total(){
+    public double calcularTotal(){
         return this.monto + this.apartado;
     }
     
@@ -47,14 +47,15 @@ public class Tarjeta {
     public void retirar(double retirar) {
         this.monto -= retirar;
     }
-    public void crearApartado(double apartar){
-        this.apartado+= apartar;
-        this.monto -= apartar;
-    }
     
     public void eliminarApartado(){
         this.monto += this.apartado;
         this.apartado = 0;
+    }
+    
+    public void crearApartado(double apartar){
+        this.apartado+= apartar;
+        this.monto -= apartar;
     }
 
     @Override
@@ -65,6 +66,6 @@ public class Tarjeta {
                     + "\nnip: " + nip
                     + "\nMonto: " + monto
                     + "\nApartado: " + apartado
-                    + "\nTotal: " + this.total();
+                    + "\nTotal: " + this.calcularTotal();
     }
 }
